@@ -1,6 +1,5 @@
 package org.munozy.microservices.demo.currencyconversionservice.rest;
 
-import org.munozy.microservices.demo.currencyconversionservice.config.CurrencyExchangeServiceConfig;
 import org.munozy.microservices.demo.currencyconversionservice.dto.ExchangeDto;
 import org.springframework.cloud.netflix.ribbon.RibbonClient;
 import org.springframework.cloud.openfeign.FeignClient;
