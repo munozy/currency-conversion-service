@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: currency-conversion-service
+
+server:
+  port: 8100
+  servlet.context-path: /currency-conversion-service
+
+service.url.exchange: http://localhost:8000/currency-exchange-service/
+
+ribbon:
+  eureka:
+    enabled: false
+
+currency-exchange-service:
+  ribbon:
+    listOfServers: localhost:8000/currency-exchange-service
