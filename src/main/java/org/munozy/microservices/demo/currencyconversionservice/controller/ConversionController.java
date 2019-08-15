@@ -13,7 +13,7 @@ import java.math.BigDecimal;
 @RestController
 @RequestMapping(ConversionController.PATH)
 public class ConversionController {
-    static final String PATH = "/conversions";
+    static final String PATH = "/currency-conversion";
 
     @Autowired
     CurrencyConversionService conversionService;

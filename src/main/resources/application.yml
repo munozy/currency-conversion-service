@@ -4,9 +4,9 @@ spring:
 
 server:
   port: 8100
-  servlet.context-path: /currency-conversion-service
+  servlet.context-path: /
 
-service.url.exchange: http://localhost:8000/currency-exchange-service/
+service.url.exchange: http://localhost:8000/
 
 ribbon:
   eureka:
@@ -14,4 +14,4 @@ ribbon:
 
 currency-exchange-service:
   ribbon:
-    listOfServers: localhost:8000/currency-exchange-service
+    listOfServers: localhost:8000

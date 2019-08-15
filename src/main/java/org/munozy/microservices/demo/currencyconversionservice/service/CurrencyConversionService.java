@@ -60,7 +60,7 @@ public class CurrencyConversionService {
         uriVariables.put("to", to);
 
         ResponseEntity<ExchangeDto> responseEntity = new RestTemplate().getForEntity(
-                serviceUrlConfig.getExchange() + "exchanges/from/{from}/to/{to}",
+                serviceUrlConfig.getExchange() + "currency-exchange/from/{from}/to/{to}",
                 ExchangeDto.class,
                 uriVariables
         );

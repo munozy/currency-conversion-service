@@ -7,7 +7,7 @@ import retrofit2.http.Path;
 
 public interface CurrencyExchangeServiceRetrofitRest {
 
-    @GET("exchanges/from/{from}/to/{to}")
+    @GET("currency-exchange/from/{from}/to/{to}")
     Call<ExchangeDto> getExchange(@Path("from") String from,
                                   @Path("to") String to);
 }
