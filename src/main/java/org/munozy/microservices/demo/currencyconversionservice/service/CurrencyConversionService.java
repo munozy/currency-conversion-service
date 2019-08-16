@@ -73,6 +73,7 @@ public class CurrencyConversionService {
                 .from(exchangeDto.getFrom())
                 .to(exchangeDto.getTo())
                 .conversion(exchangeDto.getConversion())
+                .port(exchangeDto.getPort())
                 .amount(amount)
                 .convertedAmount(amount.multiply(exchangeDto.getConversion()))
                 .build();

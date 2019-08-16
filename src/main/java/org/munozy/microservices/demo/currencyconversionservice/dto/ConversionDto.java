@@ -22,4 +22,6 @@ public class ConversionDto {
 
     BigDecimal convertedAmount;
 
+    int port;
+
 }
