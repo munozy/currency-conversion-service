@@ -69,6 +69,9 @@ public class CurrencyConversionService {
     }
 
     private ConversionDto calculateConversion(ExchangeDto exchangeDto, BigDecimal amount) {
+
+        LOGGER.info("{}", exchangeDto);
+
         return ConversionDto.builder()
                 .from(exchangeDto.getFrom())
                 .to(exchangeDto.getTo())

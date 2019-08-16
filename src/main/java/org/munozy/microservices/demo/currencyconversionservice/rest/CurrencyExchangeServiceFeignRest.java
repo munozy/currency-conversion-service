@@ -13,10 +13,10 @@ import org.springframework.web.bind.annotation.PathVariable;
  * @FeignClient(name = "currency-exchange-service", url = "localhost:8000")
  */
 
-@FeignClient(name = "currency-exchange-service")
+@FeignClient(name = "netflix-zuul-api-gateway-server")
 @RibbonClient(name = "currency-exchange-service")
 public interface CurrencyExchangeServiceFeignRest {
 
-    @GetMapping(path = "/currency-exchange/from/{from}/to/{to}")
+    @GetMapping(path = "/currency-exchange-service/currency-exchange/from/{from}/to/{to}")
     ExchangeDto getExchange(@PathVariable String from, @PathVariable String to);
 }

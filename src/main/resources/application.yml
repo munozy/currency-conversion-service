@@ -4,7 +4,6 @@ spring:
 
 server:
   port: 8100
-  servlet.context-path: /
 
 service.url.exchange: http://localhost:8000/
 
@@ -15,5 +14,4 @@ eureka:
 
 #ribbon.eureka.enable: false # it is not necessary because now it use eureka
 #currency-exchange-service.ribbon.listOfServers: localhost:8000, localhost:8001 # it is not necessary because now it use eureka
-
 
